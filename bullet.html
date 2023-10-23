@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  ul {
+    list-style-type: disc; /* Set the type of bullet point */
+  }
+  ul.custom-bullet {
+    list-style-type: none; /* Remove default bullet point */
+  }
+  ul.custom-bullet li::before {
+    content: "•"; /* Use a custom character as the bullet */
+    color: red; /* Change the color of the bullet */
+    margin-right: 5px; /* Add space between the bullet and the text */
+  }
+</style>
+</head>
+<body>
+
+<h2>Default Bullet Point</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<h2>Custom Bullet Point</h2>
+<ul class="custom-bullet">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+<marquee direction="left">Scrolling text goes here</marquee>
+
+</body>
+</html>
